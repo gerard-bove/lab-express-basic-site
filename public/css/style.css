@@ -13,6 +13,9 @@ h2 {
 
 body {
     background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 img {
@@ -27,5 +30,14 @@ div {
 a {
     text-decoration: none;
     padding: 0 10px;
+}
+table {
+    background-color: white;
+    margin: 10px 0;
+    border: 2px solid black;
+}
+
+.mb-3 {
+    margin: 5px 0;
 }
 

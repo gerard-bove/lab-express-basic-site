@@ -8,17 +8,51 @@
 </head>
 
 <body>
-    <a href="">Home</a>
-    <a href="/about">About Xavi</a>
-    <a href="/work">Work</a>
-    <a href="/photogallery">Photo Gallery</a>
+    <nav>
+        <a href="">Home</a>
+        <a href="/about">About Xavi</a>
+        <a href="/work">Work</a>
+        <a href="/photogallery">Photo Gallery</a>
+    </nav>
 
     <h1>Home</h1>
+    
     <div>
         <h2>Fc Barcelona player</h2>
         <img src="images/Xavi_Hernandez.jpg" />
     </div>
-    <script src="js/javascript.js"></script> -->
+
+    <h2>Valora a Xavi</h2>
+
+    <form action="" class="container w-75 mx-auto">
+
+        <div class="nota row mb-3">
+            <label for="activitat" class="col-3 text-end d-block">Nombre del usuario:</label>
+            <input type="text" name="" id="activitat" class="col-6">
+        </div>
+
+        <div class="nota row mb-3">
+            <label for="nota" class="col-3 text-end d-block">Nota para la carrera de Xavi:</label>
+            <input type="number" name="" id="nota" class="col-6" value="8">
+        </div>
+
+        <div class="boto mb-3">
+            <input type="button" name="" id="boto1" class="col-6 offset-3 btn btn-info mb-3" value="enviar nota" onclick="enviarNota()" onmouseover="">
+        </div>
+    </form>
+
+    <table id="tablaNotas" >
+        <thead>
+            <tr>
+                <th>Usuario</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody id="taula-body">
+        </tbody>
+    </table>
+
+    <script src="js/javascript.js"></script>
 </body>
 
 </html>
